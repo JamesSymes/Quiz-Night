@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="overlay"></div>
+      <div class="logo">
+        <span class="quiz">Quiz</span>
+        <span class="night">Night</span>
+    </div>
+  <div class="container">
+
+    <div id="start-screen">
+      <h2>Welcome to Quiz Night!</h2>
+      <button id="start-btn">Start Quiz</button>      
+    </div>
+    <div id="loading-screen">
+      <h2>Loading...</h2>
+      <div id="loading-spinner"></div>
+    </div>
+    
+    <div id="quiz-screen" style="display: none;">
+      <h2 id="question-number"></h2>
+      <h3 id="question"></h3>
+      <div id="options"></div>
+      <div id="feedback"></div>
+      <button id="next-btn" disabled>Next</button>
+    </div>
+    <div id="results-screen" style="display: none;">
+      <h2>Results</h2>
+      <p id="final-score"></p>
+      <button id="restart-btn">Start New Quiz</button>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
+
